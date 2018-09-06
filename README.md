@@ -2,8 +2,9 @@
 Simple application with React
 
 
+### Install dependencies:
 ```
-  npm start
+  npm install
 ```
 
 ### Run:
@@ -14,4 +15,4 @@ Simple application with React
 ## Description
 
 
-## API used: [Nutritionix](https://developer.nutritionix.com/)
+### API used: [Nutritionix](https://developer.nutritionix.com/)
