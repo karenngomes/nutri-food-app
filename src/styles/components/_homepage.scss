@@ -1,0 +1,53 @@
+.intro {
+    height:100vh; 
+} 
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.left {
+    height: 100vh;
+    color: #FFF;
+    background: url('/images/restaurant.jpeg') no-repeat;
+    background-size: cover;
+    
+}
+
+.right {
+    height:100vh;
+    background-color: #e74c3c;
+    align-items: center;
+}
+
+.centered {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.split {
+    overflow-x: hidden; 
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+@media (max-width: 1200px) { 
+    .left {
+        height: 50vh;
+    }
+    
+    .right {
+        height:50vh
+    }
+}

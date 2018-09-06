@@ -1,0 +1,40 @@
+.search-content {
+    width: 93%;
+    margin-left: -3rem;
+}
+.search-content__title {
+    padding: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.food {
+    display: inline;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 0 0.3rem 0.7rem 0.2rem;
+    background: #cebcbcd1;
+    transition: all 0.3s ease;
+    float: left;
+    width: 40%;
+    height: 19rem;
+    cursor: pointer;
+} 
+
+.food:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.food__name {
+    margin: 1rem auto;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.food__img {
+    margin: 2rem;
+}
