@@ -8,7 +8,7 @@ Simple application with React
 
 ### Run:
 ```
-  npm run server
+  npm run dev-server
 ```
 
 ## Description
