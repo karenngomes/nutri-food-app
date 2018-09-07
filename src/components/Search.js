@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 import FoodModal from './FoodModal';
 
@@ -47,23 +47,22 @@ export default class Search extends Component {
             <div className="search-content">
                 <h2 className="search-content__title">Search for: {this.props.input}</h2>
                 <ul>
-                {this.state.foods.map((food, index)=> (
-                    <div id={index} key={index}>
-                        <li className="food" onClick={this.handleSelectedFood.bind(this, index)} >
-                            <img className="food__img" src={food.thumbnail}></img>
-                            <h4 className="food__name">{food.item_name}</h4>                       
-                        </li>
-                    </div> 
-                ))}</ul>
+                    {this.state.foods.map((food, index)=> (
+                        <div id={index} key={index}>
+                            <li className="food" onClick={this.handleSelectedFood.bind(this, index)} >
+                                <img className="food__img" src={food.thumbnail}></img>
+                                <h4 className="food__name">{food.item_name}</h4>                       
+                            </li>
+                        </div> 
+                    ))}
+                </ul>
                 
                 <FoodModal 
                     isOpen={this.state.isOpen}
                     closeModal={this.handleCloseModal}
                     selectedFood={this.state.selectedFood}
                 />
-            </div>
-            
+            </div>    
         );
     }
-
 }

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Search from './Search';
 import SearchBox from './SearchBox';
-window.$ = window.jQuery=jquery;
-import jquery from 'jquery';
-import { Row, Col} from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 export default class HomePage extends Component {
     
@@ -27,27 +25,22 @@ export default class HomePage extends Component {
     }
 
     render() {
-        return (
-            
-        <div className="intro">
-            <Row>
-    
-                <Col lg={6} sm={12} className="split left">
-                    {this.state.disabled && <Search input={this.state.search} />}
-                </Col>
+        return ( 
+            <div className="intro">
+                <Row>
 
-                <Col lg={6} sm={12} className="split right">
-                    
-                    <div className="centered">
-                        <SearchBox handleSearchName={this.handleSearchName} />
-                    </div>
-                    
-                </Col>
+                    <Col lg={6} sm={12} className="split right">
+                        <div className="centered">
+                            <SearchBox handleSearchName={this.handleSearchName} />
+                        </div>
+                    </Col>
+        
+                    <Col lg={6} sm={12} className="split left">
+                        {this.state.disabled && <Search input={this.state.search} />}
+                    </Col>
 
-            </Row>
-        </div>
-             
+                </Row>
+            </div>
         );
     }
-    
 }

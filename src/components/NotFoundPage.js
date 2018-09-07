@@ -9,7 +9,7 @@ const NotFoundPage = () => (
       <p>Are you lost? <Link to="/">Go Home</Link></p>
     </div>
   </div>
-    
+  
 );
 
 export default NotFoundPage;

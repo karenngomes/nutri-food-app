@@ -1,7 +1,7 @@
 .search-content {
     width: 93%;
-    margin-left: -3rem;
 }
+
 .search-content__title {
     padding: 2rem;
     margin-bottom: 0;
@@ -12,17 +12,18 @@
 }
 
 .food {
-    display: inline;
-    border-radius: 0.5rem;
-    padding: 2rem;
+    list-style: none;
+    position: relative;
+    padding: 0 0.2rem;
     text-align: center;
     margin: 0 0.3rem 0.7rem 0.2rem;
     background: #cebcbcd1;
-    transition: all 0.3s ease;
     float: left;
-    width: 40%;
-    height: 19rem;
+    width: 44%;
+    border-radius: 0.2rem;
     cursor: pointer;
+    overflow: hidden;
+    height: 34vh;
 } 
 
 .food:hover {
@@ -32,9 +33,26 @@
 .food__name {
     margin: 1rem auto;
     color: white;
+    text-align: center;
     font-size: 1.2rem;
 }
 
 .food__img {
-    margin: 2rem;
+    margin: 1.2rem 0.2rem 0.3rem;
+}
+
+@media (max-width : 992px) {
+    .food__img {
+        margin: 1rem 0.2rem 0;
+    }
+}
+
+@media (max-width : 480px) {
+    .food {
+        width: 93%;
+        margin-left: -0.6rem;
+    }
+    .food__name {
+        margin: 1rem auto;
+    }
 }
